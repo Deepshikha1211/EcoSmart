@@ -1,0 +1,36 @@
+.energy-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; }
+  
+  .metric-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-card h3 {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .metric-value {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+  }
+  
+  .metric-value .number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .metric-value .unit {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Hangyaboly&family=Poppins:wght@400;600&display=swap');
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+  background-color: #2949238c; /* Translucent green */
+  width: 100%; /* Ensure it spans the full width */
+  padding: 0.8rem 1.5rem; /* Adjust padding for height */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Poppins', sans-serif; /* Use Poppins font for the navbar */
+  height: 55px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Align logo, links, and auth buttons */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 2rem; /* Increased size for the logo */
+  font-family: 'Hangyaboly', cursive; /* Use Hangyaboly font for the logo */
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+  position: relative; /* Needed for the underline effect */
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0; /* Vertical padding for spacing */
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font for links */
+}
+
+.navbar-links a:hover {
+  transform: translateY(-3px); /* Slight upward movement on hover */
+  color: #e0f7fa; /* Lighter color on hover */
+}
+
+/* Active Page Underline */
+.navbar-links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #fff; /* White underline */
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%; /* Full underline width on hover or when active */
+}
+
+/* Auth Links */
+.auth-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-links .auth-link {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50; /* Green button */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-links .auth-link:hover {
+  background-color: #388e3c; /* Darker green hover effect */
+}

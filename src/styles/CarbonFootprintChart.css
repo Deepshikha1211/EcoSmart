@@ -1,0 +1,40 @@
+.carbon-footprint-chart {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+ 
+}
+
+.head{
+  background-color: #025621;
+}
+
+.chart-title h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.chart-subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.chart-select {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.chart-content {
+  margin-top: 1.5rem;
+}
+

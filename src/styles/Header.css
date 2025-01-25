@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 40px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+   
+  
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+   width: 40%;
+   margin-top: 20px;
+    margin-left: 250px; /* Leaves space for the sidebar */
+    transition: margin-left 0.3s; /* Smooth transition when sidebar changes */
+  }
+  
+  .search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    width: 300px;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4a5568;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-profile span {
+    font-weight: 500;
+  }
+  
+  

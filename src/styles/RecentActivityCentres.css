@@ -1,0 +1,114 @@
+.recent-activity {
+    flex: 1;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .RecentActivityCentres{
+    display: flex;
+    gap: 20px;
+   
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Nearby Recycling Centers */
+  .nearby-recycling-centers {
+    flex: 1;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nearby-recycling-centers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nearby-recycling-centers li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nearby-recycling-centers li:last-child {
+    border-bottom: none;
+  }
+  
+  .center-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .center-details strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .center-details .distance {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .center-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .status.open {
+    background-color: #2ecc71;
+  }
+  
+  .status.closed {
+    background-color: #e74c3c;
+  }
+  
+  .priority {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .priority.high,.priority.medium,.priority.low  {
+    background-color: #a9a9a9;
+    color: white;
+  }
+  
+  

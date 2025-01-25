@@ -1,0 +1,255 @@
+/* Container with space for the sidebar */
+.ecosmart-container {
+    height: -webkit-fill-available;
+    background-color: #f3f4f6;
+    display: flex;
+    margin-top: -30px;
+  }
+  
+ 
+  
+  /* Main content section with a left margin to accommodate the sidebar */
+  .main-content {
+    flex: 1;
+    padding: 1.7rem;
+    
+  }
+  
+  /* Rewards container with adjusted grid layout */
+  .rewards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Reward summary card */
+  .reward-summary {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Balance card */
+  .balance-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .trophy-icon {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Balance info */
+  .balance-info h3 {
+    margin: 0;
+    color: #2d6a4f;
+    font-size: 1.5rem;
+  }
+  
+  .balance-info p {
+    margin: 0.25rem 0 0;
+    color: #6c757d;
+  }
+  
+  /* Expiry notice */
+  .expiry-notice {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  
+  /* Metrics container */
+  .metrics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .metric {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .metric h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .metric p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .metric.earned {
+    background-color: #d8f3dc;
+    color: #2d6a4f;
+  }
+  
+  .metric.spent {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+  
+  .metric.expired {
+    background-color: #f8f9fa;
+    color: #6c757d;
+  }
+  
+  /* Filter form */
+  .filter-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: end;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-group label {
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .filter-group select,
+  .filter-group input {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1b4332;
+  }
+  
+  /* Reward info card */
+  .reward-info {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reward-info h3 {
+    margin: 0 0 1rem;
+    color: #2d6a4f;
+  }
+  
+  .reward-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reward-info li {
+    margin-bottom: 1.5rem;
+  }
+  
+  .reward-info li strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2d6a4f;
+  }
+  
+  .reward-info li p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Info button */
+  .info-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: 1px solid #2d6a4f;
+    color: #2d6a4f;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .info-btn:hover {
+    background-color: #2d6a4f;
+    color: white;
+  }
+
+  .transactions-table {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transactions-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transactions-table th {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .transactions-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .ecosmart-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      position: static; /* Remove fixed positioning on small screens */
+      width: 100%;
+      margin-bottom: 1rem; /* Space between sidebar and content */
+    }
+  
+    .main-content {
+      margin-left: 0; /* Remove left margin on smaller screens */
+    }
+  
+    .rewards-container {
+      grid-template-columns: 1fr; /* Stack the columns in one row */
+    }
+  
+    .metrics-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .filter-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  

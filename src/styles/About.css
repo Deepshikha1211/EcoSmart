@@ -1,0 +1,184 @@
+/* About Page Styles */
+:root {
+    --primary-green: #2c5e3b;
+    --secondary-green: #59713e;
+    --text-white: #f4f4f4;
+    --transition-speed: 0.3s;
+}
+
+.about-page {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-white);
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.about-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('leafbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1); /* Adjusted to make the background image more visible */
+    z-index: -2;
+}
+
+/* Lighter overlay to enhance image visibility */
+.about-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 94, 59, 0.6); /* Adjust opacity to make the image clearer */
+    z-index: -1;
+}
+.about-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(44, 94, 59, 0.9);
+}
+
+.about-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.about-image-container {
+    flex: 0.6; /* Adjusted for better proportion */
+    width: 100%; 
+    height: 500px; /* More substantial height */
+    border-radius: 15px; /* Slightly increased border radius */
+    background-image: url('worker.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.3s ease;
+    
+    /* Advanced overlay effect */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+
+.about-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg, 
+        rgba(44, 94, 59, 0.5), 
+        rgba(89, 113, 62, 0.3)
+    );
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.about-image-container:hover::before {
+    opacity: 0.4;
+}
+/* .about-image-container:hover {
+    transform: scale(1.05); 
+} */
+
+
+
+
+
+.about-text {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+}
+
+.mission-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.mission-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--text-white);
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+}
+
+.values-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.values-list li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.values-list li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image-container, .about-text {
+        flex: 1;
+    }
+}

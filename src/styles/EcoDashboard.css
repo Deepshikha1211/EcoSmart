@@ -1,0 +1,28 @@
+.eco-dashboard {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #f0f2f5;
+    flex-direction: row;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  

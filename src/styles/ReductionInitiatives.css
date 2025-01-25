@@ -1,0 +1,50 @@
+.reduction-initiatives {
+    background-color: #fff;
+  }
+  
+  .initiatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .head{
+    margin-top: 20px;
+    background-color: #025621;
+  }
+  
+  .initiative-item {
+    background-color: #e6f7e6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .initiative-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .initiative-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ebf8ff;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .initiative-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+  }
+  
+  .initiative-description {
+    font-size: 0.875rem;
+    color: #718096;
+  }
+  
+  

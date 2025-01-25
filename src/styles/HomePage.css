@@ -1,0 +1,73 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Miss+Truly&display=swap');
+
+/* General Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('farmbg.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the page is at least the height of the viewport */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+ 
+}
+
+/* Header */
+.homepage-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Main Content */
+.homepage-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Container */
+.text-container {
+  background-color: #294923; /* Dark green background */
+  padding: 100px 200px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Main Text Styles */
+.main-text {
+  color: #fff; /* White text to contrast with the background */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Specific Font Styles */
+.league-spartan {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.miss-trully {
+  /*font-family: 'Miss Trully', cursive; /* Assuming Miss Trully is a cursive font */
+  font-family: 'Alex Brush', 'cursive';
+
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #80c24e;
+}
+
+/* Sub Text */
+.sub-text {
+  color: #fff; /* White text */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+  font-size: 2.5rem; /* Adjust size as needed */
+  margin-top: 10px; /* Space between main text and sub text */
+}

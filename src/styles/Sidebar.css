@@ -1,0 +1,108 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #1f2937;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enables scrolling if content exceeds viewport height */
+}
+
+.logo-section {
+  padding: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center; /* Center aligns the logo and text */
+}
+
+.logo-section h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.logo-section p {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  color:#10b981 ;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02); /* Slightly enlarges on hover for better interactivity */
+  color: #fff;
+}
+
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600; /* Highlights the active menu */
+}
+
+.profile-section {
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Adds a subtle divider */
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce width on smaller screens */
+    padding: 1rem;
+  }
+
+  .logo-section h1 {
+    font-size: 1.25rem; /* Smaller font for logo title */
+  }
+
+  .logo-section p {
+    font-size: 0.75rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .profile-section {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width on very small screens */
+    height: auto; /* Adjust height */
+    position: static; /* Stacks with content */
+  }
+
+  .logo-section {
+    margin-bottom: 1rem;
+  }
+
+  .profile-section {
+    margin-top: 1rem;
+  }
+}

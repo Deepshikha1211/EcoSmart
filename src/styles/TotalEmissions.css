@@ -1,0 +1,96 @@
+.total-emissions {
+
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color:#025621;
+  color: white;
+}
+
+.emissions-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: -10px;
+}
+
+.total-emissions-summary {
+  flex: 1;
+}
+
+.emissions-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d6a4f; /* Darker green for a more nature-oriented look */
+}
+
+.emissions-label {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.emissions-change {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.emissions-change.decrease {
+  color: #48bb78; /* Soft green for decrease */
+}
+
+.emissions-change.increase {
+  color: #f56565;
+}
+
+.emissions-breakdown {
+  flex: 1;
+}
+
+.emission-scope {
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+.scope-title {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.scope-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d6a4f; /* Darker green for scope value */
+}
+
+/* Additional eco-friendly touch */
+.emissions-value {
+  color: #006400; /* Dark green for the total emissions */
+}
+
+.scope-value {
+  color: #2f855a; /* Forest green for scope values */
+}
+
+.scope-title {
+  color: #373938; 
+  font-weight:200 ;
+}
+
+.total-emissions-summary, .emissions-breakdown {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e6f7e6; /* Light green background for sections */
+}
+
+.emissions-change {
+  color: #6b7280; /* Soft gray for neutral text */
+}

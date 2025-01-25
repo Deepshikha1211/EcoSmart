@@ -1,0 +1,68 @@
+/* General Page Styles */
+.features-page {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('farmbg.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .features-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Main Content */
+  .features-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between the feature boxes */
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+    padding: 2rem;
+  }
+  
+  /* Feature Box */
+  .feature-box {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Feature Link */
+  .feature-link {
+    text-decoration: none;
+    color: #2e7d32; /* Green text */
+  }
+  
+  .feature-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
