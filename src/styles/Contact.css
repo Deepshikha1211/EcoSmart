@@ -1,0 +1,109 @@
+/* Contact.css */
+
+/* General Styles */
+.contact-page {
+    font-family: 'Georgia', serif; /* Classy font */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Position relative for the overlay */
+    min-height: 100vh; /* Ensure the page is at least the height of the viewport */
+}
+
+/* Background Image */
+.contact-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('leafbg.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    z-index: 1; /* Place it behind the content */
+}
+
+
+/* Main Content */
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add some padding */
+    position: relative; /* Position relative for the content */
+    z-index: 3; /* Place it above the overlay */
+}
+
+/* Contact Content */
+.contact-content {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    max-width: 1000px; /* Limit the width of the content */
+    margin: 20px; /* Center the content */
+    background: rgba(255, 255, 255, 0); /* Semi-transparent background */
+    height: 400px;
+    padding: 20px; /* Padding inside the content */
+    backdrop-filter: blur(10px); /* Glass-like blur effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Left Section */
+.contact-left {
+    flex: 0.8; /* Take up 50% of the space */
+    padding-right: 10px; /* Space between left and right sections */
+    padding-left: 50px;
+}
+
+/* Right Section */
+.contact-right {
+    flex: 1; /* Take up 50% of the space */
+    padding-left: 20px; /* Space between left and right sections */
+    padding-right: 80px;
+    padding-top: 35px;
+}
+
+/* Title */
+.contact-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #ffffff; /* Change color as needed */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px; /* Space between fields */
+    padding: 10px; /* Padding inside fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+/* Button */
+.contact-form button {
+    padding: 10px; /* Padding inside button */
+    background-color: #59713e; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background-color: #4a5b30; /* Darker shade on hover */
+}
+
+
+/* Right Section Paragraphs */
+.contact-right p {
+    font-size: 1rem; /* Font size */
+    color: #ffffff; /* Darker text color for readability */
+    margin: 5px 0; /* Space between paragraphs */
+    border-bottom: 1px solid #ccc; /* Separator line */
+    padding-bottom: 15px; /* Space below the text */
+    padding-top: 15px;
+}

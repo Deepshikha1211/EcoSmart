@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/About';
+import Contact from './pages/Contact';
 import FeaturesPage from './pages/FeaturesPage';
 import EcoDashboard from './components/EcoDashboard';
 import RecDashboard from './components/RecycleDashboard';
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/features" element={<FeaturesPage />} />
+                <Route path="/contact" element={<Contact />} />
                 
                 {/* Parent route for EcoDashboard */}
                 <Route path="/eco-dashboard/*" element={<EcoDashboard />} />
